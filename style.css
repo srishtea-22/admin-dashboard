@@ -14,7 +14,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #6AA4B0;
+    background-color: #2F6D80;
+    color: white;
 }
 
 h2 {
@@ -43,12 +44,14 @@ li {
 li > svg {
     height: 1.5rem;
     width: 1.5rem;
+    fill: white;
 }
 
 h2 > svg {
     height: 40px;
     width: 40px;
     margin-right: 1em;
+    fill: white;
 }
 
 /* header */
@@ -56,8 +59,10 @@ h2 > svg {
     display: grid;
     grid-template-rows: 1fr 2fr;
     grid-template-columns: 0.3fr 6fr 0.5fr 0.7fr 1.2fr;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     align-items: center;
+    box-shadow: #b6b7b5;
+    background-color: #6AA4B0;
 }
 
 .header > svg {
@@ -66,14 +71,14 @@ h2 > svg {
 }
 
 .pfp {
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
     justify-self: end;
 }
 
 .search-bar {
-    background: rgb(82, 82, 82, 0.1);
+    background: #E1E7E0;
     border: none;
     font-size: 1rem;
     border-radius: 1.625rem;
@@ -104,7 +109,7 @@ h2 > svg {
 }
 
 button {
-    background-color: #2F6D80;
+    background-color: #2B4560;
     font-family: "Montserrat";
     border-radius: 1.625rem;
     border: none;
@@ -112,10 +117,43 @@ button {
     align-self: center;
     height: 50px;
     width: 70px;
+    font-weight: 500;
 }
 .share {
     justify-self: center;
 }
-.footer {
-    grid-column: 1 / -1;
+
+/*main */
+
+.main-content {
+    background-color: #E1E7E0;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 80% 20%;
+    padding: 1rem;
+}
+.main-content > h4 {
+    align-self: self-start;
+}
+
+.updates {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+.update {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    border-left: 10px solid #2B4560;
+    min-height: 200px;
+    flex-direction: column;
+    padding: 1rem;
+}
+.update > h2 {
+    margin: 0;
+}
+.update > a {
+    color: #696968;
 }
