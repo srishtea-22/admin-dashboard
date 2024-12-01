@@ -51,6 +51,41 @@ h2 > svg {
     margin-right: 1em;
 }
 
+.header {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 0.3fr 6fr 0.5fr 0.7fr 1.2fr;
+    padding: 1rem;
+    align-items: center;
+}
+
+.header > svg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.header > img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.search-bar {
+    background: rgb(82, 82, 82, 0.1);
+    border: none;
+    font-size: 1rem;
+    border-radius: 1.625rem;
+    height: 2rem;
+}
+.bell-icon, .name{
+    justify-self: end;
+}
+.pfp {
+    justify-self: end;
+    
+}
+
+
 .footer {
     grid-column: 1 / -1;
 }
