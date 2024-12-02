@@ -91,7 +91,7 @@ h2 > svg {
     justify-self: center;
 }
 
-.pfp-big {
+.pfp-big, .t1 > img, .t2 > img  {
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
@@ -126,7 +126,7 @@ button {
 /*main */
 
 .main-content {
-    background-color: #E1E7E0;
+    background-color: #d3d7d2;
     display: grid;
     grid-template-rows: 10% 90%;
     grid-template-columns: 70% 28%;
@@ -183,4 +183,23 @@ button {
 
 .side-updates > h4 {
     margin: 0.5rem;
+}
+.trending{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.t1, .t2 {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.profiles > h4, .profiles > h4{
+    margin-bottom: 0;
+}
+.profiles > p, .profiles > p{
+    margin-top: 0;
+}
+.t1 > img, .t2 > img {
+    margin-bottom: 1rem;
 }
