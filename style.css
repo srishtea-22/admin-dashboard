@@ -129,8 +129,9 @@ button {
     background-color: #E1E7E0;
     display: grid;
     grid-template-rows: 10% 90%;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 70% 28%;
     padding: 1rem;
+    column-gap: 1.5rem;
 }
 .main-content > h4 {
     align-self: self-start;
@@ -156,4 +157,30 @@ button {
 }
 .update > a {
     color: #696968;
+}
+
+.side-updates {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    display: grid;
+}
+.side-updates > h3{
+    justify-self: center;
+}
+.announce{
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+}
+.a1, .a2 {
+    border-bottom: 1px solid grey;
+    margin: 0.5rem;
+}
+.a3 {
+    margin: 0.5rem;
+}
+
+.side-updates > h4 {
+    margin: 0.5rem;
 }
